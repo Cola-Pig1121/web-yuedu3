@@ -29,9 +29,8 @@ jobs:
         cache: 'npm'
     - run: npm ci
 
-    - name: install yarn
-      run: npm install yarn
-      run: yarn install
-      run: yarn serve
-      run: yarn build
-      run: yarn lint
+    - run: npm install yarn
+    - run: yarn install
+    - run: yarn serve
+    - run: yarn build
+    - run: yarn lint
